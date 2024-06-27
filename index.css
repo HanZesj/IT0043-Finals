@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    background-color: #191818;
+    background-image: linear-gradient(to right, #191818, #3e2b22);
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif; 
+}
+
+.banner-background{
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-color: #191818;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#banner {
+    font-size: 25px;
+    font-weight: bold;
+    width: 2000px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('/images/1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#banner-text, #sub-text{
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-decoration: none; 
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: 1em;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#sub-text{
+    font-weight: 200;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+#nav-tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+}
+
+#nav-tabs li {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+#nav-tabs a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+#nav-tabs a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.page-header {
+    position: relative;
+}
+
+.header-text-section{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #191818;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+    border-top: 3px solid #f0ad4e;
+    border-bottom: 3px solid #f0ad4e;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.tabs-container {
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    padding: 20px; 
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media (min-width: 3840px) {
+    #banner {
+        font-size: 1.2vw; 
+        width: 75%;
+        height: 60vh;
+    }
+    #banner-text {
+        font-size: 1.8vw; /* Adjust font size for 4K displays */
+    }
+}
+
+@media (max-width: 1920px) {
+    #banner {
+        font-size: 2vw; /* Larger font size for smaller displays */
+        width: 85%; /* Adjust width for smaller screens */
+        height: 40vh; /* Adjust height for smaller screens */
+    }
+    #banner-text {
+        font-size: 2.5vw; /* Adjust font size for smaller displays */
+    }
+}
