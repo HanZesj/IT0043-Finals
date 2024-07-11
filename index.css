@@ -4,9 +4,10 @@ body {
     background-image: linear-gradient(to right, #191818, #3e2b22);
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #ffffff;
 }
 
-.banner-background{
+.banner-background {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 50px;
@@ -17,14 +18,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #banner {
     font-size: 25px;
     font-weight: bold;
-    width: 2000px;
+    width: 90%;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('/images/1.png');
@@ -40,7 +40,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-#banner-text{
+#banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,7 +56,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.text-container{
+.text-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,7 +72,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#banner-text, #sub-text{
+#banner-text, #sub-text {
     font-size: 5em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -85,7 +85,7 @@ body {
     font-family: 'Times New Roman', Times, serif
 }
 
-#sub-text{
+#sub-text {
     font-weight: 200;
     font-size: 1.5em;
     letter-spacing: normal;
@@ -111,6 +111,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #nav-tabs a {
@@ -131,7 +132,7 @@ body {
     position: relative;
 }
 
-.header-text-section{
+.header-text-section {
     text-align: center;
     padding: 20px 0;
     background-color: #191818;
@@ -148,6 +149,7 @@ body {
     margin-right: auto;
     font-size: 3em;
     text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .tabs-container {
@@ -162,6 +164,23 @@ body {
     gap: 10px; 
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Additional Styles */
+#nav-tabs a:active {
+    background-color: #f0ad4e;
+    color: #191818;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#banner-text:hover {
+    color: #f0ad4e;
+    text-shadow: 2px 2px 8px rgba(240, 173, 78, 0.8);
+}
+
+.header-text-section p {
+    margin: 0;
+    padding: 10px;
 }
 
 /* Media Queries */
@@ -184,5 +203,45 @@ body {
     }
     #banner-text {
         font-size: 2.5vw; /* Adjust font size for smaller displays */
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        width: 95%;
+        height: 30vh;
+    }
+    #banner-text {
+        font-size: 4vw;
+    }
+    #sub-text {
+        font-size: 2vw;
+    }
+    #nav-tabs a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .header-text-section {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        width: 100%;
+        height: 25vh;
+    }
+    #banner-text {
+        font-size: 6vw;
+    }
+    #sub-text {
+        font-size: 3vw;
+    }
+    #nav-tabs a {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+    .header-text-section {
+        font-size: 1.5em;
     }
 }
