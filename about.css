@@ -6,14 +6,13 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    color: #000000;
     padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 nav ul {
@@ -22,7 +21,6 @@ nav ul {
     justify-content: center;
     margin: 0;
     padding: 0;
-    border: #e6e6e6;
 }
 
 nav ul li {
@@ -30,18 +28,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-}
-nav-about ul{
-    background-color: #000000;
-}
-.about-tabs {
-    background-color: #000000;
-    margin-top: 0px;
-    padding: 50px;
 }
 
 
@@ -55,7 +45,7 @@ nav-about ul{
     text-align: center;
     color: #fff;
     position: relative;
-    background-image: url(About/Cover.png);
+    background-image: url(About/Cover.jpg);
 }
 
 #hero::after {
