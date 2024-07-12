@@ -1,0 +1,72 @@
+/* Existing CSS */
+body {
+    background-color: #2e2e2e; /* Black background color */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Align content to the start of the flex container */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure body covers the viewport */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.title-gallery {
+    position: absolute;
+    top: 200px; /* Adjust the top margin as needed */
+    left: 300px; /* Adjust the left margin as needed */
+    text-align: left;
+}
+
+.title-gallery h1,
+.title-gallery h2,
+.title-gallery p {
+    margin: 5px 0; /* Vertical margin */
+}
+
+.title-gallery h1 {
+    font-size: 4.5em; /* Font size for h1 */
+    margin-left: 30px; /* Adjust margin */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Custom font family */
+}
+
+.title-gallery h2 {
+    font-size: 4em; /* Font size for h2 */
+    margin-left: 200px; /* Adjust margin */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Custom font family */
+}
+
+.title-gallery p {
+    font-size: 1.5em; /* Font size for the author text */
+    margin-left: 220px; /* Adjust margin */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px; /* Gap between image items */
+    margin: 50px; /* Adjust margin */
+}
+
+.image-item {
+    flex: 1 1 250px; /* Each image item takes equal space, with minimum width of 250px */
+    max-width: 300px; /* Maximum width of each image item */
+    margin: 0 10px 20px; /* Adjust margin */
+    text-align: center; /* Center align content inside image items */
+    transition: transform 0.2s ease; /* Smooth hover transition */
+}
+
+.image-item img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below inline images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.2s ease; /* Smooth hover transition */
+}
+
+.image-item:hover {
+    transform: translateY(-10px); /* Lift image on hover */
+}
