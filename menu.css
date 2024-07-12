@@ -1,0 +1,104 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #191818;
+}
+
+header {
+    text-align: center;
+    background-color: #4D4848;
+    color: white;
+    padding: 1em 0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#burger-photo {
+    justify-content: center;
+    width: 100%;
+    border-top: 5px solid #f0ad4e;
+    border-bottom: 5px solid #f0ad4e;
+}
+
+.menu-navigation {
+    margin-top: 20px;
+}
+
+.menu-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-navigation ul li a:hover {
+    color: #ccc;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 142px;
+}
+
+.menu-item {
+    background-color: white;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    height: 95%;
+    color: black;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h2 {
+    margin: 10px 0 5px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+h2, h5, p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.col {
+background-color: white;
+    margin: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
