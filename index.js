@@ -60,3 +60,24 @@ document.addEventListener('DOMContentLoaded', function() {
         element.addEventListener('mouseover', addFadeInAnimation);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.opacity = 0;
+    document.body.style.transition = 'opacity 2s';
+    window.addEventListener('load', () => {
+        document.body.style.opacity = 1;
+    });
+
+    // Attempt to add a fade-out effect when leaving the page
+    // Note: This might not always work due to the quick unload process
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the link from navigating immediately
+            const href = this.href;
+            document.body.style.opacity = 0;
+            setTimeout(() => {
+                window.location.href = href;
+            }, 2000); // Adjust the timeout to match the transition time
+        });
+    });
+});

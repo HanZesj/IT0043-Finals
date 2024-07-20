@@ -3,8 +3,10 @@ body {
     background-color: #191818;
     background-image: linear-gradient(to right, #191818, #3e2b22);
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-family: 'Roboto', Arial, sans-serif;
     color: #ffffff;
+    transition: background-color 0.3s ease;
+    scroll-behavior: smooth;
 }
 
 .banner-background {
@@ -13,119 +15,92 @@ body {
     padding-bottom: 50px;
     background-color: #191818;
     width: 100%;
-    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 #banner {
-    font-size: 25px;
-    font-weight: bold;
-    width: 90%;
-    height: 600px;
+    width: 100%;
+    height: 60vh; /* Adjust height for better proportions */
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('/images/1.png');
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 50px;
     padding: 0 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 4em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    text-decoration: none; 
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 10px;
     letter-spacing: 1em;
     font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
 }
 
 .text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Times New Roman', Times, serif;
-}
-
-#banner-text, #sub-text {
-    font-size: 5em;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    text-decoration: none; 
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 10px;
-    letter-spacing: 1em;
-    font-family: 'Times New Roman', Times, serif
 }
 
 #sub-text {
-    font-weight: 200;
     font-size: 1.5em;
-    letter-spacing: normal;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 150px;
+    font-weight: 200;
+    padding-top: 20px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2em;
 }
 
 #nav-tabs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
     display: flex;
-    justify-content: right;
-    z-index: 1;
+    flex-wrap: wrap; /* Allow the nav items to wrap on smaller screens */
+    justify-content: center; /* Center the navigation items */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0; /* Add some margin to the top and bottom */
+}
+
+#nav-tabs ul li a {
+    text-decoration: none;
+    color: white; /* Make the nav tab text color white */
+    font-size: 1rem; /* Use a relative unit for scalability */
+    padding: 10px 15px; /* Add padding for clickable area */
+    margin: 0 5px; /* Add margin to separate items */
 }
 
 #nav-tabs li {
-    display: flex;
-    justify-content: center;
     margin: 0 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #nav-tabs a {
     text-decoration: none;
-    color: #fff;
-    padding: 20px 30px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    transition: all 0.3s ease; 
+    color: #fff; /* Make the nav tab text color white */
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #nav-tabs a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #f0ad4e;
+    color: #fff; /* Ensure text remains white on hover */
+    transform: scale(1.1);
 }
 
 .page-header {
@@ -137,17 +112,15 @@ body {
     padding: 20px 0;
     background-color: #191818;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-top: 20px;
     border-top: 3px solid #f0ad4e;
     border-bottom: 3px solid #f0ad4e;
-    margin-top: 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3em;
     text-transform: capitalize;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -156,12 +129,12 @@ body {
     width: 100%;
     justify-content: center;
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
-    padding: 20px; 
+    padding: 20px;
     display: flex;
-    flex-direction: row; 
-    gap: 10px; 
+    flex-direction: row;
+    gap: 10px;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -169,7 +142,7 @@ body {
 /* Additional Styles */
 #nav-tabs a:active {
     background-color: #f0ad4e;
-    color: #191818;
+    color: #fff; /* Ensure text remains white when active */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -183,13 +156,53 @@ body {
     padding: 10px;
 }
 
+button {
+    background-color: #f0ad4e;
+    color: #191818;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d88c35;
+    transform: scale(1.05);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Media Queries */
 @media (min-width: 3840px) {
-    #banner {
-        font-size: 1.2vw; 
-        width: 75%;
-        height: 60vh;
-    }
     #banner-text {
         font-size: 1.8vw; /* Adjust font size for 4K displays */
     }
@@ -197,8 +210,6 @@ body {
 
 @media (max-width: 1920px) {
     #banner {
-        font-size: 2vw; /* Larger font size for smaller displays */
-        width: 85%; /* Adjust width for smaller screens */
         height: 40vh; /* Adjust height for smaller screens */
     }
     #banner-text {
@@ -206,42 +217,120 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    #banner {
-        width: 95%;
-        height: 30vh;
+@media (max-width: 1024px) {
+    .page-header {
+        padding: 20px; /* Adjust padding for header */
     }
+
+    .banner-background {
+        height: 50vh; /* Adjust banner height */
+    }
+
     #banner-text {
-        font-size: 4vw;
+        font-size: 2.5rem; /* Adjust main banner text size */
+    }
+
+    #sub-text {
+        font-size: 1.5rem; /* Adjust subtext size */
+    }
+
+    .header-text-section p {
+        font-size: 1.2rem; /* Adjust header section text */
+    }
+
+    #nav-tabs ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /* Improve navigation layout */
+        padding: 0;
+    }
+
+    #nav-tabs ul li {
+        list-style-type: none; /* Remove bullet points from nav items */
+    }
+
+    #nav-tabs ul li a {
+        text-decoration: none;
+        color: white; /* Ensure nav tab text remains white */
+        font-size: 1rem; /* Adjust link size */
+    }
+}
+
+@media (max-width: 768px) {
+    #banner-text {
+        font-size: 5vw;
     }
     #sub-text {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     #nav-tabs a {
         font-size: 1rem;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
     .header-text-section {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
+    #nav-tabs ul li a, #nav-tabs a {
+        padding: 8px 10px; /* Reduce padding */
+        font-size: 0.8rem; /* Reduce font size */
+        margin: 0 3px; /* Reduce margin */
+    }
+
+    #nav-tabs ul {
+        justify-content: space-around; /* Adjust spacing */
+    }
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #ffffff;
+    }
+
+    .banner-background {
+        padding-top: 60px; /* Reduce padding */
+        padding-bottom: 25px;
+    }
+
     #banner {
-        width: 100%;
-        height: 25vh;
+        height: 50vh; /* Adjust banner height for smaller screens */
+        padding: 0 10px; /* Reduce padding */
     }
+
     #banner-text {
-        font-size: 6vw;
+        font-size: 2em; /* Reduce font size for smaller screens */
+        letter-spacing: 0.5em; /* Adjust letter spacing */
+        padding: 5px 10px; /* Adjust padding */
     }
+
+    .text-container {
+        text-align: center;
+        color: white;
+        padding: 0 20px; /* Add padding to ensure text does not touch the edges */
+    }
+}
+
+@media (max-width: 320px) {
+    .text-container {
+        padding: 0 10px;
+    }
+
+    #banner-text, #sub-text {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (min-width: 321px) and (max-width: 428px) {
+    .text-container {
+        padding: 0 20px;
+    }
+
+    #banner-text {
+        font-size: 2rem; /* Slightly larger font for larger screens */
+    }
+
     #sub-text {
-        font-size: 3vw;
-    }
-    #nav-tabs a {
-        font-size: 0.8rem;
-        padding: 8px 15px;
-    }
-    .header-text-section {
-        font-size: 1.5em;
+        font-size: 1.75rem;
     }
 }

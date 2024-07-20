@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/index.css">
     <title>POUND</title>
 </head>
 <body>
     <header class="page-header">
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
         <div class="banner-background">
             <div id="banner">
                 <div class="text-container">
-                    <div id="banner-text">POUND</div><br><br>
+                    <div id="banner-text">POUND</div>
                     <div id="sub-text">Burger + Pizza + Fries</div>
                 </div>
             </div>
@@ -20,16 +22,25 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="location.html">Locations</a></li>
-                <li><a href="about.html">More about us</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
         <div class="header-text-section">
             <p>Home to affordable luxurious burgers in the metro</p>
         </div>
     </header>
-    <script src="index.js"></script>
+    <script src="/JS/index.js"></script>
 </body>
+<script>
+    document.getElementById("sidebarToggle").addEventListener("click", function() {
+        var navTabs = document.getElementById("nav-tabs");
+        if (navTabs.style.right === "0px") {
+            navTabs.style.right = "-250px"; // Hide
+        } else {
+            navTabs.style.right = "0"; // Show
+        }
+    });
+    </script>
 </html>
