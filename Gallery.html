@@ -1,41 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Background Example</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="Gallery.css">
-</head>
-<body>
-    <div class="title-gallery">
-        <h1 class="pound-text">POUND</h1>
-        <h2 class="gallery-text">GALLERY</h2>
-        <p class="author-text">by Todd English</p>
-    </div>
+  </head>
+  <body>
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="head">
+                            <h1>Pound Gallery</h1>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="image-container">
-        <div class="image-item">
-            <img src="Gallery/Bar.jpg" alt="Bar">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/Menu.jpg" alt="Menu">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/View.jpg" alt="View">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/Dinning.jpg" alt="Dinning">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/pound-by-todd-english.jpg" alt="pound-by-todd-english">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/pound-4.jpg" alt="pound-4">
-        </div>
-        <div class="image-item">
-            <img src="Gallery/cOOK.png" alt="cOOK">
-        </div>
-    </div>
+                
 
-</body>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="nav-tabs" id="nav-tabs">
+                            <div class="row">
+                                <div class="col-xl-3"></div>
+            
+                                <div class="col-xl-1"><a href="home.html">Home</a></div>
+            
+                                <div class="col-xl-1"><a href="menu.html">Menu</a></div>
+            
+                                <div class="col-xl-1"><a href="about.html">About</a></div>
+            
+                                <div class="col-xl-1"><a href="reservations.html">Reservations</a></div>
+            
+                                <div class="col-xl-2"><a href="location.html">Locations</a></div>
+        
+                                <div class="col-xl-3"></div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="body_text">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p>"No BS, just damn good eats and vibes that hit harder than your last breakup."</p>
+                        <h1>POUND x FLATTERIE</h1>
+                        <h2>|A virtual visit to the bunker|</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="body_pictures">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="image_bar">
+                            <h1>Bar</h1>
+                            <img id="productImage" src="Gallery/Bar.jpg" alt="Product" onclick="toggleImageSize(this)">
+                        </div>
+                        <div class="image_menu">
+                            <h1>Product</h1>
+                            <img id="menuImage" src="Gallery/Menu.jpg" alt="Menu" onclick="toggleImageSize(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="body_picture_bottom">
+            <div class="image-item">
+                <img src="Gallery/View.jpg" alt="View" onclick="toggleImageSize(this)">
+            </div>
+            <div class="image-item">
+                <img src="Gallery/Dinning.jpg" alt="Dinning" onclick="toggleImageSize(this)">
+            </div>
+            <div class="image-item">
+                <img src="Gallery/pound-by-todd-english.jpg" alt="Pound by Todd English" onclick="toggleImageSize(this)">
+            </div>
+            <div class="image-item">
+                <img src="Gallery/pound-4.jpg" alt="Pound 4" onclick="toggleImageSize(this)">
+            </div>
+            <div class="image-item">
+                <img src="Gallery/cOOK.png" alt="Cook" onclick="toggleImageSize(this)">
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class ="logos">
+                <img src="About/Logo.jpg" alt="Poundlogo">
+                <img src="About/SLH Logo.png" alt="SLHlogo">
+            </div>
+        </footer>
+    
+    <script src="Gallery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
