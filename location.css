@@ -8,6 +8,29 @@ body {
 .page-header {
     position: relative;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #161a1d;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #f3c33f;
+}
 
 .tab-content {
     display: none;
@@ -41,7 +64,6 @@ body {
 
 .branch {
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
