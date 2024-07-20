@@ -88,3 +88,42 @@ header {
     margin: 5px;
     text-align: center;
 }
+
+/* Media Queries for iPhones */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    #resto-photo {
+        padding-top: 80px;
+    }
+
+    .container {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="tel"],
+    .container input[type="date"],
+    .container input[type="time"],
+    .container textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
