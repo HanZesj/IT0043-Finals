@@ -1,27 +1,40 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(https://eatsplorations.com/wp-content/uploads/2019/04/burgers-and-flatbreads-at-pound-x-flatterie-greenbelt-3-6.jpg?w=840&h=566);
-    padding: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #191818;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    background-color: #191818;
     color: white;
+    padding: 1em 0;
+}
+
+#resto-photo {
+    justify-content: center;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .container {
-    background-color: rgba(7, 3, 2, 0.491);
-    padding: 20px;
+    background-color: #000000;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
     border: 2px solid #f0ad4e;
-}
-
-.card {
-    background-color: #00000014;
-    width: auto;
 }
 
 .card-body {
@@ -35,7 +48,7 @@ body {
 .container label, h5 {
     display: block;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .container input[type="text"],
@@ -54,7 +67,7 @@ body {
 }
 
 .container button {
-    background-color: #424342;
+    background-color: #f0ad4e;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -64,9 +77,14 @@ body {
 }
 
 .container button:hover {
-    background-color: #000000;
+    background-color: #ff9500;
 }
 
-.container .hidden {
+.hidden {
     display: none;
+}
+
+#reminderMessage {
+    margin: 5px;
+    text-align: center;
 }

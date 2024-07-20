@@ -1,33 +1,27 @@
-function submitReservation(event) {
-    event.preventDefault(); 
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const guests = document.getElementById('guests').value;
-    const specialRequests = document.getElementById('specialRequests').value;
-
-    if (!name || !email || !phone || !date || !time || !guests) {
-        alert('Please fill in all required fields.');
-        return;
-    }
-
-    const reservation = {
-        name: name,
-        email: email,
-        phone: phone,
-        date: date,
-        time: time,
-        guests: guests,
-        specialRequests: specialRequests
-    };
-
-    console.log(reservation);
-}
-
-function showConfirmationMessage() {
+document.addEventListener('DOMContentLoaded', function () {
+    const reservationForm = document.getElementById('reservationForm');
     const confirmationMessage = document.getElementById('confirmationMessage');
-    confirmationMessage.classList.remove('hidden');
-}
+    
+    reservationForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        if (reservationForm.checkValidity()) {
+            confirmationMessage.classList.remove('hidden');
+            confirmationMessage.textContent = "Reservation submitted successfully!";
+            reservationForm.reset();
+        } else {
+            event.stopPropagation();
+            reservationForm.classList.add('was-validated');
+        }
+    }, false);
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
