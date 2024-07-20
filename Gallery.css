@@ -162,3 +162,82 @@ footer {
     transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease, border 0.3s ease;
     border-radius: 8px;
 }
+
+.imageText{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 8em;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        padding: 60px 0;
+    }
+
+    .head h1 {
+        font-size: 3em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .nav-tabs a {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .body_text p {
+        font-size: 1.2em;
+        margin-top: 200px;
+    }
+
+    .body_text h1 {
+        font-size: 4em;
+    }
+
+    .body_text h2 {
+        font-size: 1.5em;
+        margin-bottom: 150px;
+    }
+
+    .imageText {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 8em;
+        color: #fff;
+    }
+
+    .body_pictures {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #productImage, #menuImage {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .body_picture_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .image-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+}
