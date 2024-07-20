@@ -1,52 +1,26 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #191818;
-    background-image: url(Cookcook.jpg);
+    background-image: url(About/CookCook.jpg);
     margin: 0;
     padding: 0;
 }
-
-#nav-tabs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    z-index: 1;
-}
-
-#nav-tabs li {
-    display: flex;
-    justify-content: center;
-    margin: 0 10px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#nav-tabs a {
-    text-decoration: none;
-    color: #fff;
-    padding: 20px 30px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    transition: all 0.3s ease; 
-}
-
-#nav-tabs a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
 .page-header {
     position: relative;
 }
+
 .tab-content {
     display: none;
     padding: 10px;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: white;
 }
+.tab-content h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80PX;
 
+}
 .tab-content h2 {
     text-align: center;
 }
@@ -56,7 +30,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .branch {
@@ -81,7 +55,7 @@ body {
 
 .branch h3 {
     text-align: center;
-    background-color: #f0ad4e;
+    background-color: #252320;
     color: white;
     padding: 10px 0;
     margin: 0;
@@ -103,5 +77,19 @@ body {
 .details iframe {
     margin-top: 10px;
     border: black;
-    border-radius: 18px;
+    border-radius: 5px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(194, 155, 72);
+    background-color: rgb(0, 0, 0);;
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+footer img {
+    max-width: 100px;
+    height: auto; 
 }
