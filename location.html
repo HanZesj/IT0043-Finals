@@ -9,21 +9,13 @@
 </head>
 
 <body>
-    <nav id="nav-tabs" class="tabs-container">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="location.html">Locations</a></li>
-            <li><a href="about.html">More about us</a></li>
-        </ul>
-    </nav>
     <div class="tabs">
         <div class="tab-button" onclick="openTab(event, 'Locations')"></div>
     </div>    
     <div id="Locations" class="tab-content">
-        <h2>VISIT US AT THESE LOCATIONS!</h2>
+        <div class="headertitle"></div>
+        <h1>POUND X FLATTERIE</h1>
+        <h2>Visit us at our locations around the Philippines!</h2>
         <div class="branches">
             <div class="branch" onclick="toggleDetails('branch1')">
                 <h3>MALL OF ASIA</h3>
@@ -182,5 +174,10 @@
     </div>
     <script src="location.js"></script>
 </body>
-
+<footer>
+    <div class ="logos">
+        <img src="About/Logo.jpg" alt="Poundlogo">
+        <img src="About/SLH Logo.png" alt="SLHlogo">
+    </div>
+</footer>
 </html>
