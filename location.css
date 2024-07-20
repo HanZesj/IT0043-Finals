@@ -19,6 +19,12 @@ body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 80PX;
+    background-color: #4D4848;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
 
 }
 .tab-content h2 {
